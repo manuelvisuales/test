@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Untitled Document</title>
+ <style>
+ *{margin:0; padding:0;}
+ 
+  .form{background-color:blue;
+        color:#FFFFFF; 
+		padding:10px 0;
+		width:100vw;}
+		
+  .result{margin-left:100px;
+        background-color:blue;
+		border:none;
+		color:#ffffff;
+		width:150px;
+		height:25px;}
+		
+  .button1{
+        margin-left:10px;
+		width:80px;
+        height:25px;
+		background-color:lime;
+		border:none;
+		border-radius:5px;}	
+   .button1:hover{background-color:red; color:#FFFFFF;}	
+   
+   input{margin-left:5px;
+         border-radius:5px;
+         border:none;
+		 width:80px;
+		 height:25px;}	
+		 
+	.cuerpo{width:100vw;
+	      height:100vh;
+		  background-color:#CCCCCC;}	 
+		  
+	.password{background-color:#CCCCCC; border:1px solid black;
+	      width:300px;
+		  height:25px;
+		  color:#FF0000;
+		  text-align:center;}
+		  		
+ </style>
+ <script type="text/javascript">
+   function suma(){  
+   var num1=document.getElementById('num1').value;
+   var num2=document.getElementById('num2').value;
+   var result="buen dia, " + num1;
+   var password='su contraseña, ' + num2 + ' ha expirado';
+   document.getElementById('result').value = result;
+   document.getElementById('password').value = password;} 
+ </script> 
+</head>   
+<body>
+  <div class="form">
+   <label>Nombre:</label><input type="text" id="num1" />
+   <label>Contraseña:</label><input type="password" id="num2" />
+   <button class="button1" onclick="suma()">Entrar</button>   <input type="text" id="result" class="result" /><br />
+   </div> 
+   
+   <div class="cuerpo">
+   <center> <input type="text" id="password" class="password" />  </center>
+   </div>
+</body>
+</html>
