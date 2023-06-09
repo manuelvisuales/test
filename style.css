@@ -82,13 +82,14 @@ iframe {width: 100vw;
           transition: 0.3s;} 
 .boton{width: 100px;
           border-radius:50%;
+          box-shadow:0 0 12px brown;
            height: 100px;
            z-index: 999;
            width:130px;
            height:130px;
            position:fixed;
-           bottom: 20px;
-           right: 25px;
+           bottom: 40px;
+           right: 45px;
            transition: ease 1s;
            animation:efecto 1.2s infinite;}
            @keyframes efecto{0%{(box-shadow:0 0 0 0 rgba(0,0,0,0.85);}
