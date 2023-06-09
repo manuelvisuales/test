@@ -54,23 +54,22 @@ iframe {width: 100vw;
        border:2px solid black;
        display: inline-block;
        margin: 30px 10px 10px 20px;
-       border-radius: 75px 5px 75px 75px;
+       border-radius: 75px 5px 75px 5px;
        box-shadow: 30px 30px 30px #444444;}
 
 .conten img{width: 280px;
-        height: 275px;
-        border-radius: 75px 5px 5px 75px;}       
+        height: 280px;
+        border-radius: 75px 5px 5px 5px;}       
 
-.precios{width: 280px;
+.info{width: 280px;
         height: 70px;
         background-color: #338866;
         display: inline-block;
-        margin-top: 10px;
         font-size: 50px;
         border-radius: 5px 5px 75px 5px;
         text-align: center;}
 
-.precios a{text-decoration: none;
+.info a{text-decoration: none;
    display: inline-block;
    color:white;
    width: 280px;
