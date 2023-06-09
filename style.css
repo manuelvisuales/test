@@ -88,7 +88,7 @@ iframe {width: 100vw;
            width:130px;
            height:130px;
            position:fixed;
-           bottom: 40px;
+           bottom: 80px;
            right: 45px;
            transition: ease 1s;
            animation:efecto 1.2s infinite;}
