@@ -43,14 +43,16 @@
 .container{display: flex;
         flex-flow:wrap;
         justify-content:center;
-        padding-top: 80px;}        
+        padding-top: 80px;
+        width:100%;
+        height:auto;}        
 
 .conte{border:1px solid black;
         width:170px;
         height:230px;
         background-color:#338866;
         display:inline-block;        
-        margin:3px; 
+        margin:7px 3px; 
         border-radius:50px 5px 75px 5px;
         box-shadow:7px 7px 12px black;}
 
