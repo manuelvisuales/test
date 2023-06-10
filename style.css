@@ -16,7 +16,7 @@
 .hheader{display: inline-block;
         color: #ffffff;
         font-size: 45px;
-        text-shadow: 0 20px 22px black;}                      
+        text-shadow: 7px 7px 8px black;}                      
 
 .ds{margin-left:15px;
         background-image: linear-gradient(
@@ -36,7 +36,8 @@
         animation: textclip 2s linear infinite;
         display:inline-block;
         font-size: 60px;
-        font-weight:bolder;}
+        font-weight:bolder;
+        text-shadow:7px 7px 8px black;}
         @keyframes textclip{to{background-position: 200% center;}}
 
 .container{display: flex;
@@ -45,12 +46,13 @@
         padding-top: 80px;}        
 
 .conte{border:1px solid black;
-        width:150px;
+        width:170px;
         height:230px;
         background-color:#338866;
         display:inline-block;        
-        margin:10px; 
-        border-radius:75px 5px 75px 5px;}
+        margin:3px; 
+        border-radius:75px 5px 75px 5px;
+        box-shadow:7px 7px 8px black;}
 
 .conte img{width: 100%;
         height: 175px;
