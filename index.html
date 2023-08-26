@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<title>Galería de Imágenes</title>
+    <title>Asistente Virtual</title>
 </head>
 <body>
-  <div class="background"></div>
-  <div class="gallery">
-    <img src="imagen1.jpg" alt="Imagen 1" class="gallery-item">
-    <img src="imagen2.jpg" alt="Imagen 2" class="gallery-item">
-    <img src="imagen3.jpg" alt="Imagen 3" class="gallery-item">
-    <!-- Agrega más imágenes aquí -->
-  </div>
-  <script src="script.js"></script>
+    <h1>Asistente Virtual</h1>
+    <textarea id="question" rows="4" cols="50" placeholder="Haz una pregunta..."></textarea>
+    <button onclick="askQuestion()">Obtener Respuesta</button>
+    <p id="answer"></p>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('question').value;
+
+            const response = await fetch('/api/gpt3', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ question })
+            });
+
+            const data = await response.json();
+            document.getElementById('answer').innerText = data.answer;
+        }
+    </script>
 </body>
 </html>
